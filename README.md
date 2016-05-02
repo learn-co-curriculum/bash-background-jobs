@@ -1,0 +1,29 @@
+# Bash Background Jobs
+
+## Objectives
+
+1. Create background tasks in bash
+2. View currently running background tasks
+3. Switch between background tasks
+
+### Create a background task in bash
+
+Sometimes you might only have access to a single terminal window and you'll want to run multiple processes. Luckily, there is an easy solution for this: Job control in bash!
+
+If you would like a start a new process (like a local server) in the background, all you need to do as add an ` &` to the end of the command like this: `jekyll serve &`. This process will now run in the background in this terminal window.
+
+>Note: You may have to press `enter` or `return` to get your prompt back.
+
+### Show currently running jobs
+
+Great, now we've got some tasks quietly running in the background, so how to we keep track of them? Simple, use the command `jobs` in your terminal to get a list of all jobs running in this window. Each job will have a job number in front of it that will look like this: `[1]`. Now we can easily keep track of all processes that are currently running.
+
+### Switching between jobs
+
+You can easily switch which job runs in the foreground with the `fg` command followed by the job number. So if our jekyll server is running in the background as job number 1, we can simply switch to it by doing `fg 1`. Once you've switched your process to running in the foreground you can act on it as normal (for example, you could now shut your server down with `ctrl + c`).
+
+## Resources
+
+ - [More Info on Bash Jobs](http://www.tldp.org/LDP/abs/html/x9644.html)
+
+<a href='https://learn.co/lessons/bash-background-jobs' data-visibility='hidden'>View this lesson on Learn.co</a>
