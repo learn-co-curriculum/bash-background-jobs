@@ -2,13 +2,18 @@
 
 ## Objectives
 
-1. Create background tasks in bash
-2. View currently running background tasks
-3. Switch between background tasks
+1. Understand why this is useful
+2. Create background tasks in bash
+3. View currently running background tasks
+4. Switch between background tasks
+
+### Understand why this is useful
+
+Sometimes you might only have access to a single terminal window (for example, with the Learn IDE!) and you'll want to run multiple processes. Luckily, there is an easy solution for this: Job control in bash!
+
+This will be really helpful in the OO Student Scraper lab where you will want to run a server so you can access a locally stored website _and_ run tests that will need to access your this server.
 
 ### Create a background task in bash
-
-Sometimes you might only have access to a single terminal window and you'll want to run multiple processes. Luckily, there is an easy solution for this: Job control in bash!
 
 If you would like a start a new process (like a local server) in the background, all you need to do as add an ` &` to the end of the command like this: `jekyll serve &`. This process will now run in the background in this terminal window.
 
