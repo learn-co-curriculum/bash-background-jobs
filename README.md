@@ -11,7 +11,7 @@
 
 Sometimes you might only have access to a single terminal window (for example, with the Learn IDE!) and you'll want to run multiple processes. Luckily, there is an easy solution for this: Job control in bash!
 
-This will be really helpful in the OO Student Scraper lab where you will want to run a server so you can access a locally stored website _and_ run tests that will need to access your this server.
+This will be really helpful in the OO Student Scraper lab where you will want to run a server so you can access a locally stored website _and_ run tests that will need to access this server.
 
 ### Create a background task in bash
 
